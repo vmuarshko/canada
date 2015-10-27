@@ -20,11 +20,17 @@
 	[self setLangDic];
 	
 	NSString *strLang = [[NSUserDefaults standardUserDefaults] objectForKey:@"setlang"];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = viewController;
+
 	if(strLang && [strLang length]>0){
-		[window addSubview:viewController.view];
-		[window makeKeyAndVisible];
+		//[window addSubview:viewController.view];
+		//[window makeKeyAndVisible];
 	}else{
+        //[window addSubview:viewController.view];
+        //[window makeKeyAndVisible];
 		UIAlertView *langAlert = [[UIAlertView alloc] initWithTitle:@"Choose your language" message:@"" delegate:self cancelButtonTitle:@"English" otherButtonTitles:@"French",nil];
+
 		[langAlert show];
 	}
 }
@@ -100,8 +106,8 @@
 		[[NSUserDefaults standardUserDefaults] setObject:@"French" forKey:@"setlang"];
 		[[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"language"];
 	}
-	[window addSubview:viewController.view];
-	[window makeKeyAndVisible];
+	//[window addSubview:viewController.view];
+	//[window makeKeyAndVisible];
 }
 
 
