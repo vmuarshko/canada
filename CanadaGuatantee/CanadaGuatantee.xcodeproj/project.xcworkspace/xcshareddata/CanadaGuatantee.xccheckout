@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1626A872-4570-4829-9711-9E4037E6102F</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>f7e5b873-00e6-4e5e-b8c7-ab18e404b89d++5596</key>
+		<string>https://catamount.svn.beanstalkapp.com/catamount/PocketMoney/branches/PocketMoney%2525252525252525252525252525252525252525252525252525252525252525252525252525203.0/Classes/ViewObjects/UICustomSwitch</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>f7e5b873-00e6-4e5e-b8c7-ab18e404b89d++5596</key>
+		<string>UICustomSwitch</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>f7e5b873-00e6-4e5e-b8c7-ab18e404b89d++5596</key>
+		<string>https://catamount.svn.beanstalkapp.com/catamount</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://catamount.svn.beanstalkapp.com/catamount/PocketMoney/branches/PocketMoney%2525252525252525252525252525252525252525252525252525252525252525252525252525203.0/Classes/ViewObjects/UICustomSwitch</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>f7e5b873-00e6-4e5e-b8c7-ab18e404b89d++5596</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>f7e5b873-00e6-4e5e-b8c7-ab18e404b89d++5596</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UICustomSwitch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
