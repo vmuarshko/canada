@@ -41,7 +41,7 @@
     [_viewButtons setFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 82, [[UIScreen mainScreen] bounds].size.width, 82)];
     
 	[_viewButtons setBackgroundColor:[UIColor clearColor]];
-    
+    self.window.rootViewController  =self.tabBarController;
     [self.window addSubview:_viewSplash];
     
     [self addIndicator]; 
