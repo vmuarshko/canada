@@ -58,6 +58,8 @@
     [viewRates addSubview:header];
     [header.btnHome addTarget:self action:@selector(homeFromRatesAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    [self homeFromRatesAction:nil];
+    
 }
 
 - (IBAction)homeFromRatesAction:(id)sender {
@@ -150,7 +152,11 @@
     if(fromTab){
         [viewHome removeFromSuperview];
         [self.view addSubview:viewRates];
-        if(appDelegate.isIphone5)
+        CGRect frame = viewRates.frame;
+
+        frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
+
+        /*if(appDelegate.isIphone5)
         {
             CGRect frame = viewRates.frame;
             frame.size.height = 487;
@@ -159,7 +165,7 @@
             frame.size.height = 324;
             frame.origin.y = 122;
             tbl.frame = frame;
-        }
+        }*/
         
         RatesApi *api=[[RatesApi alloc] init];
         api.parent=self;
