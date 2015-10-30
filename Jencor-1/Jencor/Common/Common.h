@@ -24,6 +24,9 @@
 #define RSS_URL @"http://www.jencormortgage.com/blog/"
 
 //#define PARTNERS_URL @"http://www.jencormortgage.com/jencor-ppp.html"
-#define PARTNERS_URL @"http://www.jencormortgage.com/13226/preferred-partners-program.aspx"
+//#define PARTNERS_URL @"http://www.jencormortgage.com/13226/preferred-partners-program.aspx"
+#define PARTNERS_URL @"http://www.jencormortgage.com/about-jencor-mortgage-corporation/preferred-partners/"
+
+#define RATES_URL @"http://www.jencormortgage.com/jencor-rates-table-only/"
 
 #define ALPHA_ARRAY [NSArray arrayWithObjects: @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z", nil]

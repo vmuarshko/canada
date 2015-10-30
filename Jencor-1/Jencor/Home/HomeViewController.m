@@ -16,7 +16,8 @@
 @implementation HomeViewController
 @synthesize viewRates;
 @synthesize viewHome;
-@synthesize tbl,tblData;
+
+//@synthesize tbl,tblData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +32,8 @@
 {
     [viewRates release];
     [viewHome release];
-    [tbl release];
-    [tblData release];
+//    [tbl release];
+//    [tblData release];
     [super dealloc];
 }
 
@@ -152,11 +153,19 @@
     if(fromTab){
         [viewHome removeFromSuperview];
         [self.view addSubview:viewRates];
-        CGRect frame = viewRates.frame;
+//        CGRect frame = viewRates.frame;
+//
+//        frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
+        
+        NSURL *url = [NSURL URLWithString:RATES_URL];
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+        [web loadRequest:urlRequest];
+        //web.delegate = self;
 
-        frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
-
-        /*if(appDelegate.isIphone5)
+        [appDelegate showHUDinView:self.view andTitle:@"Please wait"];
+       
+        
+         /*if(appDelegate.isIphone5)
         {
             CGRect frame = viewRates.frame;
             frame.size.height = 487;
@@ -167,9 +176,9 @@
             tbl.frame = frame;
         }*/
         
-        RatesApi *api=[[RatesApi alloc] init];
-        api.parent=self;
-        [api makeRequest];
+//        RatesApi *api=[[RatesApi alloc] init];
+//        api.parent=self;
+//        [api makeRequest];
     }else{
         [viewRates removeFromSuperview];
         [self.view addSubview:viewHome];
@@ -180,6 +189,21 @@
 }
 
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+      [appDelegate killHUD];
+    
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+    [appDelegate killHUD];
+    
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"There was some network error, please try again!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    
+}
 
 
 #pragma mark ---

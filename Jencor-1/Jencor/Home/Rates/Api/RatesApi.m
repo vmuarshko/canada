@@ -128,10 +128,10 @@
             
             refArray=nil;
             
-            [controller.tbl setHidden:NO];
-            [controller.tbl reloadData];
-            
-            [Utility fadeView:controller.tbl];        
+//            [controller.tbl setHidden:NO];
+//            [controller.tbl reloadData];
+//            
+//            [Utility fadeView:controller.tbl];        
             
         }else if(toGetRate){
             
