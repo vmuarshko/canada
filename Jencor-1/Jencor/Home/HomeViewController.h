@@ -9,17 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "CommonHeader.h"
 
-@interface HomeViewController : UIViewController {
+@interface HomeViewController : UIViewController <UIWebViewDelegate>{
     JencorAppDelegate *appDelegate;
     
     CommonHeader *header;
     
     NSMutableArray *tblData;
+   
+    IBOutlet UIWebView *web;
 }
 @property (retain, nonatomic) NSMutableArray *tblData;
 @property (retain, nonatomic) IBOutlet UIView *viewRates;
 @property (retain, nonatomic) IBOutlet UIView *viewHome;
-@property (retain, nonatomic) IBOutlet UITableView *tbl;
+
 
 - (IBAction)menuAction:(id)sender;
 

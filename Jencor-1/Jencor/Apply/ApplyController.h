@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PickerViewController.h"
+#import "CommonHeader.h"
 
 
 @interface ApplyController : UIViewController <UIWebViewDelegate>{
@@ -15,9 +16,13 @@
     
     NSString *type;
     
+    CommonHeader *header;
+    
     PickerViewController *picker;
     
     IBOutlet UIWebView *webView;
+    
+    JencorAppDelegate *appDelegate;
     
 }
 

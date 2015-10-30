@@ -44,6 +44,9 @@
 {
     [super viewDidLoad];
     
+    [self addCommonHeaderForView:@"Apply" modal:NO showBackButton:NO showEmailButton:NO];
+    
+    appDelegate=(JencorAppDelegate *)[[UIApplication sharedApplication] delegate];
     
     NSString *strURL = @"http://www.jencormortgage.com/jencor-contact-form/";
     
@@ -51,7 +54,13 @@
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [webView loadRequest:urlRequest];
     webView.delegate = self;
-    webView.scalesPageToFit = TRUE;
+    
+    CGRect frame = webView.frame;
+    
+    frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
+    
+    [appDelegate showHUDinView:self.view andTitle:@"Please wait"];
+    //webView.scalesPageToFit = TRUE;
     
     
     // Do any additional setup after loading the view from its nib.
@@ -59,6 +68,21 @@
     //tblData=[[[QuickForm alloc] init] getForm];
 }
 
+-(void)zoomToFit
+{
+    
+    if ([webView respondsToSelector:@selector(scrollView)])
+    {
+        UIScrollView *scroll=[webView scrollView];
+        
+        float zoom=0.99*webView.bounds.size.width/scroll.contentSize.width;
+        [scroll setZoomScale:zoom animated:YES];
+    }
+}
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+   [self zoomToFit];
+    [appDelegate killHUD];
+}
 
 #pragma mark ---
 #pragma mark UITableViewDelegate
