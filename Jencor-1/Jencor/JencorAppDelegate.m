@@ -9,7 +9,6 @@
 #import "JencorAppDelegate.h"
 #import "HomeViewController.h"
 #import "MRProgress.h"
-#import <HockeySDK/HockeySDK.h>
 
 @implementation JencorAppDelegate
 @synthesize progressView = _progressView;
