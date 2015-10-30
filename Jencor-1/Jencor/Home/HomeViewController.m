@@ -14,6 +14,7 @@
 #import "GlossaryController.h"
 
 @implementation HomeViewController
+@synthesize webView;
 @synthesize viewRates;
 @synthesize viewHome;
 
@@ -34,6 +35,7 @@
     [viewHome release];
 //    [tbl release];
 //    [tblData release];
+    [webView release];
     [super dealloc];
 }
 
@@ -60,7 +62,7 @@
     [header.btnHome addTarget:self action:@selector(homeFromRatesAction:) forControlEvents:UIControlEventTouchUpInside];
     
     [self homeFromRatesAction:nil];
-    
+
 }
 
 - (IBAction)homeFromRatesAction:(id)sender {
@@ -153,18 +155,24 @@
     if(fromTab){
         [viewHome removeFromSuperview];
         [self.view addSubview:viewRates];
-//        CGRect frame = viewRates.frame;
+        CGRect frame = viewRates.frame;
 //
-//        frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
-        
-        NSURL *url = [NSURL URLWithString:RATES_URL];
-        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-        [web loadRequest:urlRequest];
-        web.delegate = self;
+        frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
+        frame.size.width = [UIScreen mainScreen].bounds.size.width - 10;
 
+        viewRates.frame = frame;
+
+        NSURL *url = [NSURL URLWithString:RATES_URL];
+        self.webView.delegate = self;
+
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+        
+        //[webView setScalesPageToFit:YES];
+
+        [self.webView loadRequest:urlRequest];
         [appDelegate showHUDinView:self.view andTitle:@"Please wait"];
        
-        
+
          /*if(appDelegate.isIphone5)
         {
             CGRect frame = viewRates.frame;
@@ -188,6 +196,10 @@
     
 }
 
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    return YES;
+}
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     

@@ -16,8 +16,8 @@
     
     NSMutableArray *tblData;
    
-    IBOutlet UIWebView *web;
 }
+@property (retain, nonatomic) IBOutlet UIWebView *webView;
 @property (retain, nonatomic) NSMutableArray *tblData;
 @property (retain, nonatomic) IBOutlet UIView *viewRates;
 @property (retain, nonatomic) IBOutlet UIView *viewHome;

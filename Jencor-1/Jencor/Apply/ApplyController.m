@@ -55,10 +55,10 @@
     [webView loadRequest:urlRequest];
     webView.delegate = self;
     
-    CGRect frame = webView.frame;
+    CGRect frame = self.view.frame;
     
-    frame.size.height = [UIScreen mainScreen].bounds.size.height - 70;
-    
+    frame.size.width = [UIScreen mainScreen].bounds.size.width - 10;
+    self.view.frame = frame;
     [appDelegate showHUDinView:self.view andTitle:@"Please wait"];
     //webView.scalesPageToFit = TRUE;
     
