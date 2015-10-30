@@ -160,7 +160,7 @@
         NSURL *url = [NSURL URLWithString:RATES_URL];
         NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
         [web loadRequest:urlRequest];
-        //web.delegate = self;
+        web.delegate = self;
 
         [appDelegate showHUDinView:self.view andTitle:@"Please wait"];
        
