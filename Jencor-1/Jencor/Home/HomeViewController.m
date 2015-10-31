@@ -94,7 +94,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];    
     
-    [self setupView];
+    //[self setupView];
 }
 
 - (IBAction)menuAction:(id)sender {
