@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="220dip"
+        android:layout_height="240dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bkg_logo" />
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <include
+        android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHeader"
+        android:layout_marginRight="20dip"
+        layout="@layout/page_subheader" />
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader"
+        android:layout_above="@+id/slogan"         
+        android:focusable="true" >
+    </ListView>
+    
+    <include android:id="@+id/slogan" layout="@layout/slogan" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

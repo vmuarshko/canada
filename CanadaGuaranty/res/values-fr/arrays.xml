@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_data_files">
+        <item>head_office.html</item>
+        <item>media_centre.html</item>
+        <item>underwriting_centre.html</item>
+        <item></item>
+        <item>loss_claims.html</item>
+        <item>fraud_report.html</item>
+     </string-array>
+</resources>

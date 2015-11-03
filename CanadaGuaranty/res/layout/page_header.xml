@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/company_logo" />
+    
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/banner_news" />
+
+    <include
+        android:id="@+id/menuBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/menu_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageViewBanner"
+        layout="@layout/menu_bar"
+        />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layoutDivider"
+        android:layout_below="@+id/menuBar"
+        android:layout_toLeftOf="@+id/btnBack"
+        android:layout_marginTop="14dp"
+        android:maxLines="3"/>
+        <!-- android:text="SOME LONG TITLE TEXT" / -->
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/layoutDivider"
+        android:layout_below="@+id/menuBar"
+        android:layout_marginTop="5dp"
+        android:text="@string/btn_back"
+        android:visibility="gone" />
+    
+    <LinearLayout 
+        android:id="@+id/layoutDivider"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_stripe">
+        
+        <ImageView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" android:src="@drawable/divider_mark"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

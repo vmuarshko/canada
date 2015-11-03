@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Canada Guaranty</string>
+    <string name="btn_menu_news">Nouvelles</string>
+    <string name="btn_menu_products">Produits</string>
+    <string name="btn_menu_calc">Calculatrices</string>
+    <string name="btn_menu_email">Infolettres</string>
+    <string name="btn_menu_contact">Contactez-nous</string>
+    <string name="btn_mortgage_payment_calculator">Calculatrice de versements hypothécaires</string>
+    <string name="btn_insurance_premium_calculator">Calculatrice de primes d&quot;assurance</string>
+    <string name="btn_rent_vs_buy_calculator">Calculatrice Louer ou Acheter</string>
+    <string name="please_wait">Veuillez patienter&#8230;</string>
+    <string name="button_ok">Bien</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="loading_file">Chargement des données&#8230;</string>
+    <string name="error_news_file_not_found">Nouvelles fichier n&quot;a pas été trouvé. S&quot;il vous plaît réessayer plus tard.</string>
+	<string name="error_products_file_not_found">Produits fichier de données n&quot;a pas été trouvé. S&quot;il vous plaît réessayer plus tard.</string>    
+	<string name="error_contacts_file_not_found">Contacts fichier de données n&quot;a pas été trouvé. S&quot;il vous plaît réessayer plus tard.</string>    
+	<string formatted="false" name="msg_posted_on">Posté le %s</string>
+    <string name="title_news">COMMUNIQUÉS DE PRESSE</string>
+    <string name="btn_back">Retour</string>
+    <string name="title_calculators">CALCULATRICES</string>
+    
+    <string name="label_purpose_of_loan">Objet du prêt</string>
+    <string name="label_amount_requested">Montant du prêt($)</string>
+    <string name="label_name">Nom</string>
+    <string name="hint_amount">Montant du prêt</string>
+    <string name="hint_your_phone">Votre numéro de téléphone</string>
+    <string name="hint_comments">Commentaires</string>
+    <string name="btn_send">Soumettre</string>
+    <string-array name="arr_loan_purposes">
+        <item>Purchase</item>
+        <item>Refinance</item>
+        <item>Renewal</item>
+        <item>HELOC</item>
+    </string-array>
+    <string name="error_number_format">Veuillez indiquer un courriel valide.</string>
+    <string name="error_empty_value">S&quot;il vous plaît entrez la valeur non-vide.</string>
+    <string name="error_invalid_value">S&quot;il vous plaît saisir une valeur correcte.</string>
+    <string name="error_no_terms">Pour continuer, vous devez accepter les conditions d&quot;abonnement.</string>
+    
+    <string name="invalid_first_name">S&quot;il vous plaît entrer prénom.</string>
+    <string name="invalid_last_name">S&quot;il vous plaît entrer nom.</string>
+    <string name="invalid_email">S&quot;il vous plaît entrez votre adresse e-mail.</string>
+    <string name="invalid_valid_email">S&quot;il vous plaît entrez votre adresse e-mail valide.</string>
+    <string name="invalid_province">S&quot;il vous plaît entrer province / territoire.</string>
+    <string name="invalid_company">S&quot;il vous plaît entrer entreprise.</string>
+    <string name="invalid_title">Attention!</string>
+    
+    <string formatted="false" name="quick_application_subj">Quick application by %s</string>
+    <string formatted="false" name="quick_application_text">Loan purpose: %s\nAmount requested: %.2f\nApplicant name: %s\nEmail: %s\nPhone: %s\nComments: %s\n</string>
+    <string name="header_quick_application">Quick Application</string>
+    <string name="calc_planning">Planification Hypothécaire</string>
+    <string name="calc_purchase">L&quot;achat de logements</string>
+    <string name="calc_rent_buy">Louer ou Acheter</string>
+    <string name="header_calc_list">Montant Calculatrices</string>
+    <string name="btn_calc">Calcul</string>
+    <string name="label_monthly_income">De revenu mensuel</string>
+    <string name="money_sign">$</string>
+    <string name="label_down_payment">Mise de fonds</string>
+    <string name="label_mortgage_rate">Montant Taux(%)</string>
+    <string formatted="false" name="percent_sign">%</string>
+    <string name="label_amortization">Amortissement</string>
+    <string name="label_heating_costs">Monthly Heating Costs/Condo Fees</string>
+    <string name="month_6">6 mois</string>
+    <string name="year_1">1 année</string>
+    <string name="year_2">2 années</string>
+    <string name="year_3">3 années</string>
+    <string name="year_4">4 années</string>
+    <string name="year_5">5 années</string>
+    <string name="year_6">6 années</string>
+    <string name="year_7">7 années</string>
+    <string name="year_8">8 années</string>
+    <string name="year_9">9 années</string>
+    <string name="year_10">10 années</string>
+    <string name="year_15">15 années</string>
+    <string name="year_20">20 années</string>
+    <string name="year_25">25 années</string>
+    <string name="year_30">30 années</string>
+    <string name="year_35">35 années</string>
+    <string name="year_40">40 années</string>
+    <string name="header_motgage_qualifier">Qualifier d&quot;hypothèques</string>
+    <string name="label_mortgage_amount">Montant de l&quot;emprunt hypothécaire($)</string>
+    <string name="label_payment_frequence">Fréquence</string>
+    <string name="label_payment">Paiement</string>
+    <string name="label_monthly">Versement mensuel</string>
+    <string name="label_semi_monthly">Semi-mensuel</string>
+    <string name="label_bi_weekly">Versement accéléré aux 2 semaines</string>
+    <string name="label_weekly">Versement hebdomadaire accéléré</string>
+    <string name="header_mortgage_payment">Versement hypothécaire</string>
+    <string name="label_annual_family_income">Revenu familial annuel</string>
+    <string name="label_annual_taxes">Impôts fonciers annuels</string>
+    <string name="label_loan_payments">Paiements mensuels minimums pour les prêts / cartes de crédit</string>
+    <string name="label_secondary_payment">Versement mensuel Financement secondaire</string>
+    <string name="label_max_mortgage">Prêt hypothécaire maximum</string>
+    <string name="label_monthly_payment">Paiement mensuel</string>
+    <string name="label_bought_payment">Paiement mensuel (propriété déjà achetée)</string>
+    <string name="lable_annual_taxes">Taxes foncières annuelles</string>
+    <string name="label_annual_volume_increase">Hausse annuelle de la valeur de la propriété</string>
+    <string name="label_monthly_rent">Loyer mensuel</string>
+    <string name="label_comparision_years">Années comparées:</string>
+    <string formatted="false" name="prcent_0">0%</string>
+    <string formatted="false" name="prcent_1">1%</string>
+    <string formatted="false" name="prcent_2">2%</string>
+    <string formatted="false" name="prcent_3">3%</string>
+    <string formatted="false" name="prcent_4">4%</string>
+    <string formatted="false" name="prcent_5">5%</string>
+    <string formatted="false" name="prcent_6">6%</string>
+    <string formatted="false" name="error_value_in_range">Doit se situer entre  %.2f et  %.2f.</string>
+    <string formatted="false" name="error_values">Veuillez s&quot;il vous plaît remplir tous les champs.</string>
+    
+    <string name="contact_head_office">SIÈGE SOCIAL</string>
+    <string name="contact_media_centre">MÉDIA/RELATIONS PUBLIQUES</string>
+    <string name="contact_underwriting_centre">CENTRE NATIONAL DE SOUSCRIPTION</string>
+    <string name="contact_sales_team">ÉQUIPE NATIONALE DES VENTES</string>
+    <string name="contact_loss_claims">GESTION DES PERTES ET RÉCLAMATIONS</string>    
+    <string name="contact_fraud_report">SIGNALISATION DES CAS DE FRAUDE</string>
+    <string name="title_contacts">Contactez-nous</string>    
+    <string name="title_products">PRODUITS D&quot;ASSURANCE</string>
+    <string name="contact_tel">Téléphone</string>
+    <string name="contact_toll_free">Sans frais</string>
+    <string name="contact_toll_free_ext">ext</string>
+    <string name="contact_email">Courriel</string>
+    <string name="contact_natinal_team_msg">L&quot;équipe nationale des ventes est dédiée à vous offrir un service personnalisé ainsi que de l’information et de la formation qui sauront vous assister avec vos clients. SVP veuillez contacter votre directeur de comptes afin d’avoir plus d’informations sur nos produits et services d’assurance hypothécaire. Notre équipe saura bien vous aider à trouver la solution parfaite pour tous les besoins de vos clients.</string>
+    <string name="label_preferred_language">Langue préférée</string>
+    <string name="btn_signup">Pour s&quot;inscrire</string>
+    <string name="title_newsletter">INSCRIPTION AU BULLETIN</string>
+    <string name="label_purchase_price">Prix de vente($)</string>
+    <string name="label_term">Terme</string>
+    <string name="label_premium_rate">Taux de la prime:</string>
+    <string name="label_loan_amount">Loan Amount</string>
+    <string name="label_premium_amount">Montant de la prime:</string>
+    <string name="label_total_mortgage_amount">Montant total de prêts hypothécaires:</string>
+    <string name="label_insurance_type">Type d&quot;assurance</string>
+    <string name="label_insurance_products">Produits d&quot;assurance:</string>
+    <string name="label_interest_rate">Taux(%)</string>
+    <string name="label_monthly_calc">Versement mensuel:</string>
+    <string name="label_bi_weekly_accelerated">Aux quinzaines accélérés:</string>
+    <string name="label_weekly_accelerated">Versements hebdomadaires accélérés:</string>
+    
+    <string name="title_insurance_premium_calc">Calculatrice de primes d&quot;assurance</string>
+    
+    <string name="product_standard">Standard (Avantage Mise de fonds)</string>
+    <string name="product_flex95">Avantage Flex 95</string>
+    <string name="product_low_doc">Avantage Autonome (Travailleurs autonomes)</string>
+    <string name="product_rental">Avantage Locatif</string>
+    <string name="subscription_succeeded">Nous vous remercions de votre inscription au bulletin d’information de Canada Guaranty.</string>
+    <string name="subscription_failed">Une erreur est survenue lors de votre inscription. Veuillez essayer de nouveau.</string>
+    <string name="error">Error:</string>
+    
+    <string name="rvb_you_should" formatted="false"><![CDATA[<h2>VOUS DEVEZ %s!</h2><p><B>Selon les renseignements fournis, vous devez <b>%s</b>. </B><p>Pourquoi? Si vous achetez la propriété au prix de <b>$%.2f</b>, soit le montant maximal auquel vous avez droit, vous rembourserez <b>$%.2f</b> du total de votre prêt hypothécaire (<b>$%.2f</b>) au cours d’une période de <b>%.0f</b> année(s). Le total de la croissance de votre investissement se chiffrera à <b>$%.2f</b> suite aux paiements mensuels au titre des intérêts et du capital qui s’élèvent à <b>$%.2f</b> et la hausse prévue de la valeur de la propriété de <b>$%.2f</b>. Ce montant est %s au total de la croissance de votre investissement si vous louiez la propriété, soit environ <b>$%.2f</b> après <b>%.0f</b> année(s). Ce montant résulte de l&quot;addition des totaux de vos économies mensuelles provenant de la location, soit <b>$%.2f</b>, et du montant de la mise de fonds proposé, soit <b>$%.2f</b>, à un taux de rendement après-impôt de 4%% par an.]]></string>
+    <string name="rvb_buy">ACHETER</string>
+    <string name="rvb_rent">DEMEURER LOCATAIRE</string>
+    <string name="rvb_less">inférieur</string>
+    <string name="rvb_greater">supérieur</string>
+    
+    <string name="hint_name">Prénom</string>
+    <string name="hint_email">Courriel</string>
+    <string name="hint_last_name">Nom de famille</string>
+    <string name="label_province">Province/Territoire</string>
+    <string name="hint_company">Entreprise</string>
+   	<string name="label_subscription"><b>Conditions de souscription</b> 
+	    Je comprends qu&quot;en signant ce formulaire et en fournissant mon nom, adresse courriel, province, nom de compagnie et préférence de langue, que je serai périodiquement contacté par Guaranty Canada par leur service de nouvelles. Canada Guaranty respecte vos confidentialité et ne divulguera ni distribuera vos informations personnelles en aucune circonstance. Vous pouvez en tout temps vous désabonner.</string>
+    <string name="label_initial_mortgage_amount">Montant de l&quot;emprunt hypothécaire:</string>
+</resources>

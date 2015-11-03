@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, SplashActivity!</string>
+    <string name="app_name">Sky Financial - Canada Mortgage</string>
+    <string name="label_loading">Loading...</string>
+    <string name="cd_logo">Logo</string>
+    <string name="cd_indicator">Loading indicator</string>
+    <string name="btn_interest_rates">Interest Rates</string>
+    <string name="btn_mortage_calculators">Mortgage Calculators</string>
+    <string name="btn_quick_app">2 min Quick App</string>
+    <string name="btn_latest_news">Latest News</string>
+    <string name="btn_contact_info">Contact Info</string>
+    <string name="btn_sky_budget">Sky Home Budget &amp; Financing</string>
+    <string name="btn_visit_website">Visit Website</string>
+    <string name="button_ok">Ok</string>
+    <string name="please_wait">Processing. Please wait...</string>
+    <string name="loadind_file">Loading data file...</string>
+    <string name="menu_rates">Rates</string>
+    <string name="menu_calculator">Calculator</string>
+    <string name="menu_quick_app">Quick App</string>
+    <string name="menu_news">News</string>
+    <string name="menu_contacts">Contact</string>
+    <string name="label_office_address">Our Office Locations</string>
+    <string name="btn_show_on_map">Map</string>
+    <string name="label_call_us">Call us:</string>
+    <string name="label_email_us">Email us:</string>
+    <string name="defaul_website">http://www.mortgagecentreedmonton.com</string>
+    <string name="label_rates_hint">Rates subject to change without notice &amp; OAC</string>
+    <string name="label_term_details">Term &amp; Details</string>
+    <string name="label_rates_column">Rates</string>
+    <string name="error_rates_file_not_found">Lender Rates data is not available at the moment.</string>
+    <string name="header_rates">Interest Rates</string>
+    <string name="error_news_file_not_found">News are not available at the moment.</string>
+    <string name="header_news">Latest News</string>
+    <string name="label_purpose_of_loan">Purpose of loan</string>
+    <string name="label_amount_requested">Amount requested</string>
+    <string name="label_name">Name</string>
+    <string name="hint_amount">Amount Requested</string>
+    <string name="hint_name">Your Name</string>
+    <string name="hint_email">Your E-Mail</string>
+    <string name="hint_your_phone">Your Phone Number</string>
+    <string name="hint_comments">Comments</string>
+    <string name="btn_send">Send</string>
+    <string-array name="arr_loan_purposes">
+        <item>Purchase</item>
+        <item>Refinance</item>
+        <item>Renewal</item>
+        <item>HELOC</item>
+    </string-array>
+    <string name="error_number_format">Please enter valid number</string>
+    <string name="error_empty_value">Please enter not-empty value</string>
+    <string name="error_invalid_value">Please enter valid value</string>
+    <string formatted="false" name="quick_application_subj">Quick application by %s</string>
+    <string formatted="false" name="quick_application_text">Loan purpose: %s\nAmount requested: %.2f\nApplicant name: %s\nEmail: %s\nPhone: %s\nComments: %s\n</string>
+    <string name="sending_email">Sending email...</string>
+    <string name="header_quick_application">Quick Application</string>
+    <string-array name="calculator_list">
+        <item>Mortgage Qualifier</item>
+        <item>Rent vs Buy</item>
+        <item>Mortgage Payment</item>
+    </string-array>
+    <string name="header_calc_list">Mortgage Calculators</string>
+    <string name="btn_calc">Calculate</string>
+    <string name="label_monthly_income">Monthly Income</string>
+    <string name="money_sign">$</string>
+    <string name="label_down_payment">Down Payment</string>
+    <string name="label_mortgage_rate">Mortgage Rate</string>
+    <string formatted="false" name="percent_sign">%</string>
+    <string name="label_amortization">Amortization</string>
+    <string name="label_heating_costs">Monthly Heating Costs/Condo Fees</string>
+    <string name="month_6">6 months</string>
+    <string name="year_1">1 year</string>
+    <string name="year_2">2 years</string>
+    <string name="year_3">3 years</string>
+    <string name="year_4">4 years</string>
+    <string name="year_5">5 years</string>
+    <string name="year_6">6 years</string>
+    <string name="year_7">7 years</string>
+    <string name="year_8">8 years</string>
+    <string name="year_9">9 years</string>
+    <string name="year_10">10 years</string>
+    <string name="year_15">15 years</string>
+    <string name="year_20">20 years</string>
+    <string name="year_25">25 years</string>
+    <string name="year_30">30 years</string>
+    <string name="header_motgage_qualifier">Motgage Qualifier</string>
+    <string name="label_mortgage_amount">Mortgage Amount</string>
+    <string name="label_payment_frequence">Frequency</string>
+    <string name="label_payment">Payment</string>
+    <string name="label_monthly">Monthly</string>
+    <string name="label_semi_monthly">Semi-Monthly</string>
+    <string name="label_bi_weekly">Bi-Weekly</string>
+    <string name="label_weekly">Weekly</string>
+    <string name="header_mortgage_payment">Mortgage Payment</string>
+    <string name="label_annual_family_income">Annual Family Income</string>
+    <string name="label_annual_taxes">Annual Property Taxes</string>
+    <string name="label_loan_payments">Minimum Monthly Payments for Loans/Credit Cards</string>
+    <string name="label_secondary_payment">Monthly Secondary Financing Payment</string>
+    <string name="label_max_mortgage">Maximum Mortgage</string>
+    <string name="label_monthly_payment">Monthly Payment</string>
+    <string name="label_bought_payment">Monthly payment if you bought</string>
+    <string name="lable_annual_taxes">Annual property taxes</string>
+    <string name="label_annual_volume_increase">Annual increase in home value</string>
+    <string name="label_monthly_rent">Monthly rent</string>
+    <string name="label_comparision_years">Years of comparison</string>
+    <string formatted="false" name="prcent_0">0%</string>
+    <string formatted="false" name="prcent_1">1%</string>
+    <string formatted="false" name="prcent_2">2%</string>
+    <string formatted="false" name="prcent_3">3%</string>
+    <string formatted="false" name="prcent_4">4%</string>
+    <string formatted="false" name="prcent_5">5%</string>
+    <string formatted="false" name="prcent_6">6%</string>
+    <string formatted="false" name="error_value_in_range">Please enter value between %.2f and %.2f</string>
+    <string name="header_rent_buy">Rent vs. Buy</string>
+</resources>

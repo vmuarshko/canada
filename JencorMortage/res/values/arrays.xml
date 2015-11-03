@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loan_periods">
+        <item>@string/month_6</item>
+        <item>@string/year_1</item>
+        <item>@string/year_2</item>
+        <item>@string/year_3</item>
+        <item>@string/year_5</item>
+        <item>@string/year_7</item>
+        <item>@string/year_10</item>
+        <item>@string/year_15</item>
+        <item>@string/year_20</item>
+        <item>@string/year_25</item>
+        <item>@string/year_30</item>
+    </string-array>
+    <integer-array name="loan_period_values">
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>36</item>
+        <item>60</item>
+        <item>84</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>360</item>        
+    </integer-array>    
+    <string-array name="comparision_periods">
+        <item>@string/year_1</item>
+        <item>@string/year_2</item>
+        <item>@string/year_3</item>
+        <item>@string/year_4</item>
+        <item>@string/year_5</item>
+        <item>@string/year_6</item>
+        <item>@string/year_7</item>
+        <item>@string/year_8</item>
+        <item>@string/year_9</item>
+        <item>@string/year_10</item>
+    </string-array>
+    <integer-array name="comparision_period_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+	</integer-array>    
+    <string-array name="volume_percents">
+        <item>@string/prcent_0</item>
+        <item>@string/prcent_1</item>
+        <item>@string/prcent_2</item>
+        <item>@string/prcent_3</item>
+        <item>@string/prcent_4</item>
+        <item>@string/prcent_5</item>
+        <item>@string/prcent_6</item>
+    </string-array>
+    <integer-array name="volume_percent_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>        
+	</integer-array>    
+</resources>

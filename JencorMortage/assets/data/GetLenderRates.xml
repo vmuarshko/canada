@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rates>
+  <Rate>
+    <mortType>5 Year Term "Quick Close"</mortType>
+    <ourRate>3.19</ourRate>
+    <date_changed>2012-03-20T11:33:18.430</date_changed>
+    <mort_type>Fixed Rate Special</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>5 Year Term</mortType>
+    <ourRate>3.29</ourRate>
+    <date_changed>2012-03-29T13:45:29.533</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>5 Year Term</mortType>
+    <ourRate>2.85</ourRate>
+    <date_changed>2012-01-25T16:59:34.993</date_changed>
+    <mort_type>Variable Rate Mortgage</mort_type	>
+  </Rate>
+  <Rate>
+    <mortType>4 Year Term</mortType>
+    <ourRate>2.99</ourRate>
+    <date_changed>2012-03-12T16:10:41.753</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>3 Year Term</mortType>
+    <ourRate>2.79</ourRate>
+    <date_changed>2012-02-06T12:32:07.600</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>10 Year Term</mortType>
+    <ourRate>3.89</ourRate>
+    <date_changed>2012-03-19T12:35:00.810</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>1 Year Term</mortType>
+    <ourRate>2.74</ourRate>
+    <date_changed>2012-01-19T18:06:13.090</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+  <Rate>
+    <mortType>2 Year Term</mortType>
+    <ourRate>2.74</ourRate>
+    <date_changed>2012-01-25T16:56:39.830</date_changed>
+    <mort_type>Fixed Rate Mortgage</mort_type>
+  </Rate>
+</Rates>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/home_bg">
+    
+    <include layout="@layout/page_header" android:layout_alignParentTop="true" android:id="@+id/pageHeader" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/page_subheader" android:layout_below="@+id/pageHeader" android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader"
+        android:background="@drawable/home_buttons_bg"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:id="@+id/layoutControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+	        <TableLayout
+	            android:id="@+id/tableResults"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+                android:visibility="gone"
+	            android:layout_marginBottom="10dip"
+	            android:stretchColumns="*" >
+	
+	            <TableRow
+	                android:id="@+id/tableRowHeader"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/list_item_bg" >
+	
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_max_mortgage"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_monthly_payment"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	            </TableRow>
+	            
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    android:id="@+id/textViewMaxMortgage"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:text="$0.0"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                	                
+	                <TextView
+	                    android:id="@+id/textViewMonthlyPayment"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:text="$0.0"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="10dip">
+	                
+	                <Button
+	                    android:id="@+id/btnQuickApp"
+	                    style="@style/SFGreenButton"
+	                    android:layout_span="2"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:text="@string/btn_quick_app" />
+
+	            </TableRow>
+            </TableLayout>
+                        
+	        <TableLayout
+	            android:id="@+id/tableLayoutLoan"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:shrinkColumns="0"
+	            android:stretchColumns="1,2" >
+
+	            <TableRow
+	                android:id="@+id/tableRow1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_annual_family_income" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/money_sign" />
+
+	                <EditText
+	                    android:id="@+id/editAnnualIncome"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:imeOptions="actionNext"
+	                    android:minWidth="110dip"
+	                    android:inputType="numberDecimal" >
+
+	                    <requestFocus />
+	                </EditText>
+	                
+	            </TableRow>
+
+	            <TableRow
+	                android:id="@+id/tableRow2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_annual_taxes" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/money_sign" />
+
+	                <EditText
+	                    android:id="@+id/editAnnualTaxes"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:imeOptions="actionNext"
+	                    android:inputType="numberDecimal" >
+
+	                </EditText>	                
+	            </TableRow>
+	            
+	            <TableRow
+	                android:id="@+id/tableRow3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_mortgage_rate" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/percent_sign" />
+
+	                <EditText
+	                    android:id="@+id/editMortgageRate"
+	                    android:layout_width="wrap_content"
+	                    android:imeOptions="actionNext"
+	                    android:layout_height="wrap_content"
+	                    android:inputType="numberDecimal" >
+	                </EditText>	                
+	            </TableRow>
+	            
+	            <TableRow
+	                android:id="@+id/tableRow4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_amortization" />
+
+	                <Spinner
+	                    android:id="@+id/spinnerAmortization"
+	                    android:layout_span="2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>	                
+	            </TableRow>	            	            
+
+	            <TableRow
+	                android:id="@+id/tableRow5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:maxWidth="100dip"
+	                    android:text="@string/label_heating_costs" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/money_sign" />
+
+	                <EditText
+	                    android:id="@+id/editHeatingCosts"
+	                    android:layout_width="wrap_content"
+	                    android:imeOptions="actionNext"
+	                    android:layout_height="wrap_content"
+	                    android:inputType="numberDecimal"/>	                
+	            </TableRow>
+	            	            	            
+	            <TableRow
+	                android:id="@+id/tableRow6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_loan_payments" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/money_sign" />
+
+	                <EditText
+	                    android:id="@+id/editLoanPayments"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:imeOptions="actionNext"
+	                    android:inputType="numberDecimal" />
+	                
+	            </TableRow>
+	            	            
+	            <TableRow
+	                android:id="@+id/tableRow7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_secondary_payment" />
+
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:text="@string/money_sign" />
+
+	                <EditText
+	                    android:id="@+id/editSecondaryPayments"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:imeOptions="actionGo"
+	                    android:inputType="numberDecimal" />
+	                
+	            </TableRow>
+	            
+	        </TableLayout>
+	        
+	        <Button
+	            android:id="@+id/btnCalc"
+	            android:layout_width="160dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="10dip"
+	            android:text="@string/btn_calc" />
+	        
+	        	        
+		</LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

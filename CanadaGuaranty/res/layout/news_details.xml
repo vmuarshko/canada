@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <!-- ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pageHeader"  -->
+        
+        <LinearLayout
+            android:id="@+id/layoutHeader" 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+    	    android:orientation="vertical"
+    	    android:layout_below="@+id/pageHeader">
+
+		    <TextView
+		        android:id="@+id/textPosted"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"        
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    
+		    <!--  TextView
+		        android:id="@+id/textValue"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:autoLink="all"
+		        
+		        android:textAppearance="?android:attr/textAppearanceMedium" /  -->
+            
+        </LinearLayout>
+    <!-- /ScrollView -->
+    
+    
+    <android.webkit.WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutHeader" >
+
+    </android.webkit.WebView >
+
+    <ScrollView
+        android:id="@+id/layoutContent"         
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layoutHeader"
+        android:visibility="gone">
+
+	    <TextView
+	        android:id="@+id/textValue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:autoLink="all"	        
+	        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        		    
+	</ScrollView>
+    
+</RelativeLayout>

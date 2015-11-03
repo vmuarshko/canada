@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="220dip"
+        android:layout_height="240dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bkg_logo" />
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <include
+        android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageHeader"
+        layout="@layout/page_subheader" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/slogan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader">
+
+        <LinearLayout
+            android:id="@+id/textsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_back_bg"
+                android:gravity="center"
+                android:text="@string/label_jencor_corp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/btn_back_text" />
+
+            <TextView
+                android:id="@+id/textAddr1"
+                style="@style/valueViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Addr1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<!--             <Button -->
+<!--                 android:id="@+id/btnShowOnMap" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="5dip" -->
+<!--                 android:background="@drawable/arrow_button" -->
+<!--                 android:text="@string/btn_show_on_map" -->
+<!--                 android:textColor="@color/btn_back_text" -->
+<!--                 android:textStyle="bold" /> -->
+
+            <TextView
+                android:id="@+id/textEmail"
+                style="@style/valueViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:autoLink="email"
+                android:text="@string/label_email_us"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                style="@style/valueViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:autoLink="phone"
+                android:text="@string/label_call_us"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textMobilePhone"
+                style="@style/valueViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:autoLink="phone"
+                android:text="@string/label_mobile_phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            
+            <TextView
+                android:id="@+id/textUrl"
+                style="@style/linkViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:autoLink="web"
+                android:text="@string/defaul_website"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <include layout="@layout/page_contact_bottom" android:layout_width="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_gravity="center_horizontal" 
+                android:layout_height="wrap_content"/>             
+        </LinearLayout>
+    </ScrollView>
+    
+    <include android:id="@+id/slogan" layout="@layout/slogan" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

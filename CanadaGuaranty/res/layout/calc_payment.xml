@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageHeader"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:id="@+id/layoutControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableResults"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:stretchColumns="1"
+                android:visibility="gone" >
+
+                <TableRow
+                    android:id="@+id/tableRowHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_payment_frequence"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/label_payment"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/label_amortization"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dip"
+                        android:text="@string/label_monthly"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewPayment1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewAmort1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dip"
+                        android:text="@string/label_semi_monthly"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewPayment2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewAmort2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dip"
+                        android:text="@string/label_bi_weekly"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewPayment3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewAmort3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dip"
+                        android:text="@string/label_weekly"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewPayment4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewAmort4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <!--
+                TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="10dip">
+	                
+	                <Button
+	                    android:id="@+id/btnQuickApp"
+	                    style="@style/RedButton"
+	                    android:layout_span="2"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:text="@string/btn_quick_app" />
+
+	            </TableRow
+                -->
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutLoan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:shrinkColumns="0"
+                android:stretchColumns="1,2" >
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_purchase_price" />
+
+                    <EditText
+                        android:id="@+id/editPurchasePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:minWidth="110dip" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/label_down_payment" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <Spinner
+                            android:id="@+id/spinnerDownPayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="@string/label_initial_mortgage_amount" />
+
+                    <TextView
+                        android:id="@+id/initialMortgageAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/layoutInsuranceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip" >
+
+                    <TextView
+                        android:id="@+id/textInsuranceType"
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/label_insurance_products" />
+
+                    <Spinner
+                        android:id="@+id/spinnerInsuranceProduct"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textInsuranceType"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_premium_rate"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textPremiumRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_premium_amount"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textPremiumAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_total_mortgage_amount"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textTotalMortgageAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_interest_rate" />
+
+                    <EditText
+                        android:id="@+id/editMortgageRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_term" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_amortization" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAmortization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_monthly_calc"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textMonthly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/divider1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_bi_weekly_accelerated"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textBiWeeklyAccelerated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/divider2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/control_divider_height"
+                        android:layout_margin="@dimen/control_divider_margin"
+                        android:layout_span="2"
+                        android:background="@drawable/control_divider_bg" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/labelTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_weekly_accelerated"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textWeeklyAccelerated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnCalc"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="@string/btn_calc" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

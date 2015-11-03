@@ -1,0 +1,14 @@
+(res/drawable-hdpi-v4/banner_news.png) found an alternate icon with better size:impact=1
+(res/drawable-xhdpi-v4/banner_products.png) found an alternate icon with better size:impact=1
+(res/drawable-xhdpi-v4/banner_email.png) found an alternate icon with better size:impact=1
+(res/drawable-xhdpi-v4/banner_contact.png) found an alternate icon with better size:impact=1
+(res/drawable-xhdpi-v4/ic_launcher.png) found an alternate icon with better size:impact=1
+(res/drawable-xhdpi-v4/banner_calc.png) found an alternate icon with better size:impact=1
+(AndroidManifest.xml) targetSdkVersion: 17 is higher than 10: required minimal BlackBerry OS version = 10.2:impact=1
+Resizing icon banner_news.png 288x92 -> 114x36
+Resizing icon banner_products.png 446x140 -> 114x35
+Resizing icon banner_email.png 452x141 -> 114x35
+Resizing icon banner_contact.png 426x138 -> 114x36
+Resizing icon banner_calc.png 422x139 -> 114x37
+Summary: [5]=0; [4]=0; [3]=0; [2]=0; [1]=7;
+Impact Legend: [5]=Severe; [4]=High /context; [3]=Medium /context; [2]=Medium-low /context; [1]=Minor;

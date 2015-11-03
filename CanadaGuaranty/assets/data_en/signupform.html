@@ -1,0 +1,157 @@
+<style>
+.link,
+.link a,
+.signupframe
+{
+
+	color: #226699;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+	.link,
+	.link a {
+		text-decoration: none;
+		}
+	.signupframe {
+		border: 1px solid #000000;
+		background: #ffffff;
+		}
+.signupframe .required {
+	font-size: 10px;
+	}
+</style>
+<form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup3737" accept-charset="UTF-8" onsubmit="return verifyRequired3737();" >
+<input type="hidden" name="redirect" value="http://www.canadaguaranty.ca/newsletter-signup-iContact/thankyou.php">
+<input type="hidden" name="errorredirect" value="http://www.canadaguaranty.ca/newsletter-signup-iContact/error.php">
+
+<div id="SignUp">
+<table  width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;Email
+      </td>
+      <td align="left">
+        <input type="text" name="fields_email">
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;First Name
+      </td>
+      <td align="left">
+        <input type="text" name="fields_fname">
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;Last Name
+      </td>
+      <td align="left">
+        <input type="text" name="fields_lname">
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;City
+      </td>
+      <td align="left">
+        <input type="text" name="fields_city">
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        &nbsp;Company
+      </td>
+      <td align="left">
+        <input type="text" name="fields_company">
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        &nbsp;Preferred Language
+      </td>
+      <td align="left">
+        <input type="radio" id="options:preferredlanguage:eng" name="fields_preferredlanguage" value="eng"> <label for="options:preferredlanguage:eng">English</label><br>
+        <input type="radio" id="options:preferredlanguage:fre" name="fields_preferredlanguage" value="fre"> <label for="options:preferredlanguage:fre">French</label><br>
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;Province/Territory *
+      </td>
+      <td align="left">
+        <select name="fields_territory">
+          <option></option>
+          <option value="Ont">Ontario</option>
+          <option value="que">Quebec</option>
+        </select>
+      </td>
+    </tr>
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span>&nbsp;Subscription Terms
+      </td>
+      <td align="left">
+        <input type="checkbox" id="fields_subscriptionterms" name="fields_subscriptionterms"> <label for="fields_subscriptionterms"></label>
+      </td>
+    </tr>
+    <input type="hidden" name="listid" value="43515">
+    <input type="hidden" name="specialid:43515" value="L929">
+
+    <input type="hidden" name="clientid" value="818928">
+    <input type="hidden" name="formid" value="3737">
+    <input type="hidden" name="reallistid" value="1">
+    <input type="hidden" name="doubleopt" value="1">
+    <tr>
+      <td>&nbsp;</td>
+      <td><span class="required">*</span> = Required Field</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="Submit" value="Submit"></td>
+    </tr>
+    </table>
+</div>
+</form>
+<script type="text/javascript">
+
+var icpForm3737 = document.getElementById('icpsignup3737');
+
+if (document.location.protocol === "https:")
+
+	icpForm3737.action = "https://app.icontact.com/icp/signup.php";
+function verifyRequired3737() {
+  if (icpForm3737["fields_email"].value == "") {
+    icpForm3737["fields_email"].focus();
+    alert("The Email field is required.");
+    return false;
+  }
+  if (icpForm3737["fields_fname"].value == "") {
+    icpForm3737["fields_fname"].focus();
+    alert("The First Name field is required.");
+    return false;
+  }
+  if (icpForm3737["fields_lname"].value == "") {
+    icpForm3737["fields_lname"].focus();
+    alert("The Last Name field is required.");
+    return false;
+  }
+  if (icpForm3737["fields_city"].value == "") {
+    icpForm3737["fields_city"].focus();
+    alert("The City field is required.");
+    return false;
+  }
+  if (icpForm3737["fields_territory"].value == "") {
+    icpForm3737["fields_territory"].focus();
+    alert("The Province/Territory * field is required.");
+    return false;
+  }
+  if (!icpForm3737["fields_subscriptionterms"].checked) {
+    alert("The Subscription Terms field is required.");
+    return false;
+  }
+
+
+return true;
+}
+</script>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/medium_logo" />
+
+    <ScrollView 
+        android:id="@+id/buttonsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_buttons_bg">
+
+	    <TableLayout
+	        android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="1"        
+	        android:stretchColumns="*" >	
+	        <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Button
+	                android:id="@+id/btnInterestRates"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_interest_rates"
+	                android:text="@string/btn_interest_rates" />
+	            
+	            <Button
+	                android:id="@+id/btnMortgageCalculators"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_calculator"
+	                android:text="@string/btn_mortage_calculators" />
+	            
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Button
+	                android:id="@+id/btnQuickApp"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_quick_app"
+	                android:text="@string/btn_quick_app" />
+	            
+	            <Button
+	                android:id="@+id/btnNews"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_news"
+	                android:text="@string/btn_latest_news" />	            
+	        </TableRow>
+	        
+	        <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Button
+	                android:id="@+id/btnContact"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_contact"
+	                android:text="@string/btn_contact_info" />
+	            
+	            <Button
+	                android:id="@+id/btnSkyBudget"
+	                style="@style/HomeButton"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:drawableTop="@drawable/btn_sky_budget"
+	                android:text="@string/btn_sky_budget" />
+	            
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">	
+
+				<Button
+				    android:id="@+id/btnVisitWebsite"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_span="2"
+				    android:layout_marginLeft="5dip"
+				    android:layout_marginRight="5dip"
+				    android:layout_marginTop="10dip"
+				    android:layout_marginBottom="10dip"
+				    android:background="@android:color/transparent"
+				    android:drawableLeft="@drawable/small_logo"
+				    android:text="@string/btn_visit_website" >
+				    
+				</Button>	            
+	        </TableRow>
+	        	        	        
+		</TableLayout>        
+    </ScrollView>
+
+</RelativeLayout>

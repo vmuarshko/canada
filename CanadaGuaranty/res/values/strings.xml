@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Canada Guaranty</string>
+    <string name="btn_menu_news">News</string>
+    <string name="btn_menu_products">Products</string>
+    <string name="btn_menu_calc">Calculators</string>
+    <string name="btn_menu_email">Newsletter</string>
+    <string name="btn_menu_contact">Contact</string>
+    <string name="btn_mortgage_payment_calculator">Mortgage Payment Calculator</string>
+    <string name="btn_insurance_premium_calculator">Insurance Premium Calculator</string>
+    <string name="btn_rent_vs_buy_calculator">Rent Vs Buy Calculator</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="loading_file">Loading data&#8230;</string>
+    <string name="error_news_file_not_found">News file did not found. Please try again later.</string>
+	<string name="error_products_file_not_found">Products data file did not found. Please try again later.</string>    
+	<string name="error_contacts_file_not_found">Contacts data file did not found. Please try again later.</string>    
+	<string formatted="false" name="msg_posted_on">Posted on %s</string>
+    <string name="title_news">NEWS RELEASES</string>
+    <string name="btn_back">Back</string>
+    <string name="title_calculators">CALCULATORS</string>
+    
+    <string name="label_purpose_of_loan">Purpose of loan</string>
+    <string name="label_amount_requested">Amount requested($)</string>
+    <string name="label_name">Name</string>
+    <string name="hint_amount">Amount Requested</string>
+    <string name="hint_name">Your Name</string>
+    <string name="hint_email">Your E-Mail</string>
+    <string name="hint_your_phone">Your Phone Number</string>
+    <string name="hint_comments">Comments</string>
+    <string name="btn_send">Submit</string>
+    <string-array name="arr_loan_purposes">
+        <item>Purchase</item>
+        <item>Refinance</item>
+        <item>Renewal</item>
+        <item>HELOC</item>
+    </string-array>
+    <string name="error_number_format">Please enter valid number</string>
+    <string name="error_empty_value">Please enter not-empty value</string>
+    <string name="error_invalid_value">Please enter valid value</string>
+    <string name="error_no_terms">To proceed, please accept the subscription terms.</string>
+    
+    <string name="invalid_first_name">Please enter first name.</string>
+    <string name="invalid_last_name">Please enter last name.</string>
+    <string name="invalid_email">Please enter email address.</string>
+    <string name="invalid_valid_email">Please enter valid email address.</string>
+    <string name="invalid_province">Please enter province/territory.</string>
+    <string name="invalid_company">Please enter company.</string>
+    <string name="invalid_title">Attention!</string>
+    
+    <string formatted="false" name="quick_application_subj">Quick application by %s</string>
+    <string formatted="false" name="quick_application_text">Loan purpose: %s\nAmount requested: %.2f\nApplicant name: %s\nEmail: %s\nPhone: %s\nComments: %s\n</string>
+    <string name="header_quick_application">Quick Application</string>
+    <string name="calc_planning">Mortgage Planning</string>
+    <string name="calc_purchase">Home Purchase</string>
+    <string name="calc_rent_buy">Rent Vs Buy</string>
+    <string name="header_calc_list">Mortgage Calculators</string>
+    <string name="btn_calc">Calculate</string>
+    <string name="label_monthly_income">Monthly Income</string>
+    <string name="money_sign">$</string>
+    <string name="label_down_payment">Down Payment</string>
+    <string name="label_mortgage_rate">Mortgage Rate(%)</string>
+    <string formatted="false" name="percent_sign">%</string>
+    <string name="label_amortization">Amortization</string>
+    <string name="label_heating_costs">Monthly Heating Costs/Condo Fees</string>
+    <string name="month_6">6 months</string>
+    <string name="year_1">1 year</string>
+    <string name="year_2">2 years</string>
+    <string name="year_3">3 years</string>
+    <string name="year_4">4 years</string>
+    <string name="year_5">5 years</string>
+    <string name="year_6">6 years</string>
+    <string name="year_7">7 years</string>
+    <string name="year_8">8 years</string>
+    <string name="year_9">9 years</string>
+    <string name="year_10">10 years</string>
+    <string name="year_15">15 years</string>
+    <string name="year_20">20 years</string>
+    <string name="year_25">25 years</string>
+    <string name="year_30">30 years</string>
+    <string name="year_35">35 years</string>
+    <string name="year_40">40 years</string>
+    <string name="header_motgage_qualifier">Motgage Qualifier</string>
+    <string name="label_mortgage_amount">Mortgage Amount($)</string>
+    <string name="label_payment_frequence">Frequency</string>
+    <string name="label_payment">Payment</string>
+    <string name="label_monthly">Monthly Payment</string>
+    <string name="label_semi_monthly">Semi-Monthly</string>
+    <string name="label_bi_weekly">Bi-Weekly Accelerated</string>
+    <string name="label_weekly">Weekly Accelerated</string>
+    <string name="header_mortgage_payment">Mortgage Payment</string>
+    <string name="label_annual_family_income">Annual Family Income</string>
+    <string name="label_annual_taxes">Annual Property Taxes</string>
+    <string name="label_loan_payments">Minimum Monthly Payments for Loans/Credit Cards</string>
+    <string name="label_secondary_payment">Monthly Secondary Financing Payment</string>
+    <string name="label_max_mortgage">Maximum Mortgage</string>
+    <string name="label_monthly_payment">Monthly Payment</string>
+    <string name="label_bought_payment">Monthly payment if you bought</string>
+    <string name="lable_annual_taxes">Annual property taxes</string>
+    <string name="label_annual_volume_increase">Annual increase in home value</string>
+    <string name="label_monthly_rent">Monthly rent</string>
+    <string name="label_comparision_years">Years of comparison</string>
+    <string formatted="false" name="prcent_0">0%</string>
+    <string formatted="false" name="prcent_1">1%</string>
+    <string formatted="false" name="prcent_2">2%</string>
+    <string formatted="false" name="prcent_3">3%</string>
+    <string formatted="false" name="prcent_4">4%</string>
+    <string formatted="false" name="prcent_5">5%</string>
+    <string formatted="false" name="prcent_6">6%</string>
+    <string formatted="false" name="error_value_in_range">Please enter value between %.2f and %.2f</string>
+    <string formatted="false" name="error_values">Please ensure all fields are completed.</string>
+<!--      @"Veuillez s'il vous plaît remplir tous les champs.",@"Please ensure all fields are completed.", -->
+    <string name="contact_head_office">Corporate Head Office</string>
+    <string name="contact_media_centre">Media Centre</string>
+    <string name="contact_underwriting_centre">National Underwriting Centre</string>
+    <string name="contact_sales_team">National Sales Team</string>
+    <string name="contact_loss_claims">Loss Management &amp; Claims</string>    
+    <string name="contact_fraud_report">Fraud Reporting</string>
+    <string name="title_contacts">CONTACT</string>    
+    <string name="title_products">INSURANCE PRODUCTS</string>
+    <string name="contact_tel">Telephone</string>
+    <string name="contact_toll_free">Toll Free</string>
+    <string name="contact_toll_free_ext">ext</string>
+    <string name="contact_email">E-Mail</string>
+    <string name="contact_natinal_team_msg">Canada Guaranty\'s National Sales Team is committed to providing you with the personalized service, information and training you need to better assist your clients. Please contact a regional Account Executive for more information about our mortgage insurance products and services. Let us help you find the right solution for your borrowers\' unique needs.</string>
+    <string name="label_preferred_language">Preferred Language</string>
+    <string name="btn_signup">Sign-up</string>
+    <string name="title_newsletter">Newsletter Sign-up</string>
+    <string name="label_purchase_price">Purchase Price($)</string>
+    <string name="label_term">Term</string>
+    <string name="label_premium_rate">Premium Rate:</string>
+    <string name="label_loan_amount">Loan Amount:</string>
+    <string name="label_premium_amount">Premium Amount:</string>
+    <string name="label_total_mortgage_amount">Total Mortgage Amount:</string>
+    <string name="label_insurance_type">Insurance Type</string>
+    <string name="label_insurance_products">Insurance Products:</string>
+    <string name="label_interest_rate">Interest Rate(%)</string>
+    
+    <string name="label_monthly_calc">Monthly:</string>
+    <string name="label_bi_weekly_accelerated">Bi-Weekly Accelerated:</string>
+    <string name="label_weekly_accelerated">Weekly Accelerated:</string>
+    
+    <string name="title_insurance_premium_calc">Insurance Premium Calculator</string>
+    
+    <string name="product_standard">Standard (Down Payment Advantage)</string>
+    <string name="product_flex95">Flex 95 Advantage</string>
+    <string name="product_low_doc">Low Doc Advantage (Self Employed)</string>
+    <string name="product_rental">Rental Advantage</string>
+    <string name="subscription_succeeded">You successfully subscribed to our newsletter.</string>
+    <string name="subscription_failed">Unable to submit your subscription due to server error</string>
+    <string name="error">Error:</string>
+    
+    <string name="rvb_you_should" formatted="false"><![CDATA[<h2>YOU SHOULD %s!</h2><p><B>Based on the information you have given us, it looks like you should %s. </B><p>Why? If you bought for <b>$%.2f</b>, the maximum you would qualify for, you would pay down your mortgage of <b>$%.2f</b> by <b>$%.2f</b> over a period of %.0f year(s). With Principal and Interest payments of <b>$%.2f</b> per month, plus your projected property value increase of <b>$%.2f</b> your total investment growth would be <b>$%.2f</b>. <p>This amount is <b>%s</b> than your total investment growth from renting, which would be approximately <b>$%.2f</b>  after %.0f year(s). This was calculated by growing the combined totals of your monthly savings from renting (<b>$%.2f</b>) and your proposed downpayment  of <b>$%.2f</b> at a standard after-tax rate of 4%% per year.]]></string>
+    <string name="rvb_buy">BUY</string>
+    <string name="rvb_rent">CONTINUE TO RENT</string>
+    <string name="rvb_less">less</string>
+    <string name="rvb_greater">greater</string>
+    
+    <string name="hint_last_name">Your Last Name</string>
+    <string name="label_province">Province/Territory</string>
+    <string name="hint_company">Company</string>
+    
+    <string-array name="provincies">
+		<item>Alberta</item>
+		<item>British Columbia</item>
+		<item>Manitoba</item>
+		<item>New Brunswick</item>
+		<item>Newfoundland and Labrador</item>
+		<item>Northwest Territories</item>
+		<item>Nova Scotia</item>
+		<item>Nunavut</item>
+		<item>Ontario</item>
+		<item>Prince Edward Island</item>
+		<item>Quebec</item>
+		<item>Saskatchewan</item>
+		<item>Yukon Territory</item>
+    </string-array>
+    
+	<string name="label_app_premiums">Applicable Premiums</string>
+	<string name="label_ltv_ratio">Loan- to- Value Ratio</string>
+	<string name="label_single_premium">Single Premium</string>
+	<string name="label_top_up_premium">Top-Up Premium</string>
+	<string name="label_subscription"><b>Subscription Terms</b> 
+	    I understand that by providing my full name, e-mail address, company name, city, province, and language preference, that I am subscribing to the Canada Guaranty e-newsletter and am consenting to being periodically contacted via e-mail. Canada Guaranty respects your privacy and will not, under any circumstances, disclose, distribute, share or sell your contact information. You may unsubscribe at any time.</string>
+	<string name="label_initial_mortgage_amount">Initial Mortgage Amount:</string>
+</resources>

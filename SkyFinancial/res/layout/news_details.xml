@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/home_bg">
+    
+    <include layout="@layout/page_header" android:layout_alignParentTop="true" android:id="@+id/pageHeader" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/page_subheader" android:layout_below="@+id/pageHeader" android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader"
+        android:background="@drawable/home_buttons_bg" >
+
+        <RelativeLayout
+            android:id="@+id/layoutDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dip" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textTitle"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/home_button_bg" >
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textContent"
+                style="@style/valueViewText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frameLayout1"
+                android:text="Content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

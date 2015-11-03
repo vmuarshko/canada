@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/home_bg">
+    
+    <include layout="@layout/page_header" android:layout_alignParentTop="true" android:id="@+id/pageHeader" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/page_subheader" android:layout_below="@+id/pageHeader" android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    
+    <include layout="@layout/page_contact_bottom" android:layout_alignParentBottom="true" 
+        android:id="@+id/pageContactBottom" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pageContactBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader"
+        android:background="@drawable/home_buttons_bg" >
+
+        <RelativeLayout
+            android:id="@+id/layoutDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dip" >
+
+            <Button
+                android:id="@+id/btnShowOnMap"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/green_arrow_button"
+                android:text="@string/btn_show_on_map"
+                android:textColor="@color/subheader_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnShowOnMap"
+                android:layout_alignBottom="@+id/btnShowOnMap"
+                android:layout_alignParentLeft="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/btnShowOnMap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/home_button_bg" >
+            </FrameLayout>
+
+            <LinearLayout android:id="@+id/textsLayout"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dip"
+                android:layout_below="@+id/frameLayout1">                
+	            <TextView
+	                android:id="@+id/textAddr1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Addr1"
+	                style="@style/valueViewText"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <TextView
+	                android:id="@+id/textEmail"
+	                style="@style/valueViewText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="15dip"
+	                android:autoLink="email"
+	                android:text="@string/label_email_us"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <TextView
+	                android:id="@+id/textPhone"
+	                style="@style/valueViewText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="15dip"
+	                android:autoLink="phone"
+	                android:text="@string/label_call_us"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <TextView
+	                android:id="@+id/textUrl"
+	                style="@style/linkViewText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="15dip"
+	                android:autoLink="web"
+	                android:text="@string/defaul_website"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            	            
+	    	</LinearLayout>            
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

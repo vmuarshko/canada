@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+ <!--    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="220dip"
+        android:layout_height="240dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bkg_logo" /> -->
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+    
+   <android.webkit.WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/slogan"
+        android:layout_below="@+id/pageHeader" />
+    
+ <!--    <include
+        android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHeader"
+        android:layout_marginRight="20dip"
+        layout="@layout/page_subheader" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pageSubheader"
+        android:layout_above="@+id/slogan"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:id="@+id/layoutControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+	        <TableLayout
+	            android:id="@+id/tableLayoutLoan"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:stretchColumns="*" >
+		
+	            <TableRow
+	                android:id="@+id/tableRow3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <EditText
+	                    android:id="@+id/editName"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_span="2"
+	                    android:hint="@string/hint_name"
+	                    android:inputType="textPersonName"
+	                    android:imeOptions="actionNext">
+         	      	<requestFocus />
+         	      </EditText>         	                    	
+	            </TableRow>
+	
+	            <TableRow
+	                android:id="@+id/tableRow5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <EditText
+	                    android:id="@+id/editPhone"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_span="2"
+	                    android:hint="@string/hint_your_phone"
+	                    android:inputType="text|phone" 
+	                    android:imeOptions="actionNext"/>
+	                
+	            </TableRow>
+	            	            
+	            <TableRow
+	                android:id="@+id/tableRow4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <EditText
+	                    android:id="@+id/editEmail"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_span="2"
+	                    android:hint="@string/hint_email"
+	                    android:inputType="textEmailAddress"
+	                    android:imeOptions="actionNext" />
+	                
+	            </TableRow>
+		            	            		            
+	            <TableRow
+	                android:id="@+id/tableRow1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <TextView
+	                    style="@style/labelTextView"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/label_purpose_of_loan"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                <Spinner
+	                    android:id="@+id/spinnerLoanPurpose"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" />
+	
+	            </TableRow>
+
+	            <TableRow
+	                android:id="@+id/tableRow2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <EditText
+	                    android:id="@+id/editAmountRequested"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:hint="@string/hint_amount"
+	                    android:inputType="numberDecimal" 
+	                    android:layout_span="2"
+	                    android:imeOptions="actionNext">	     
+	                </EditText>
+	
+	            </TableRow>
+	            	            
+	            <TableRow
+	                android:id="@+id/tableRow6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	                
+	                <EditText
+	                    android:id="@+id/editComments"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_span="2"
+	                    android:hint="@string/hint_comments"
+	                    android:inputType="text"
+	                    android:lines="3"
+	                    android:maxLines="5"
+	                    android:singleLine="false" 
+	                    android:imeOptions="actionSend"/>
+	                
+	            </TableRow>
+	            
+	            	            
+	        </TableLayout>
+	        
+	        <Button
+	            android:id="@+id/btnSend"
+	            android:layout_width="160dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:textColor="@color/btn_back_text"
+	            android:layout_marginTop="30dip"
+	            android:text="@string/btn_send" />        
+		</LinearLayout>
+    </ScrollView> -->
+    
+    <include android:id="@+id/slogan" layout="@layout/slogan" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

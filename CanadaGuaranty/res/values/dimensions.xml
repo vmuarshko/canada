@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_btn_inner_padding">5dip</dimen>
+    <dimen name="menu_btn_corner_radius">5dip</dimen>
+    <dimen name="menu_btn_min_width">60dip</dimen>
+    <dimen name="menu_btn_max_width">80dip</dimen>
+    <dimen name="menu_btn_text_size">10sp</dimen>
+    <dimen name="menu_bar_height">68dp</dimen>
+    <dimen name="control_divider_height">1dip</dimen>
+    <dimen name="control_divider_margin">4dip</dimen>   
+    <dimen name="view_divider_height">2dip</dimen>
+    <dimen name="view_divider_margin">7dip</dimen>   
+    <dimen name="paragraph_sign_diam">5dip</dimen>   
+</resources>

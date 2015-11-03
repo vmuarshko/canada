@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_bar_up_start">#ff343433</color>
+    <color name="menu_bar_up_end">#ff191919</color>
+    <color name="menu_bar_down_start">#ff050708</color>
+    <color name="menu_bar_down_end">#ff050708</color>
+    <color name="menu_btn_active_start">#ff525251</color>
+    <color name="menu_btn_active_middle">#ff3a3a3a</color>
+    <color name="menu_btn_active_end">#ff2a2c2d</color>
+    <color name="menu_btn_inactive_text">#ff7a7b7e</color>
+    <color name="menu_btn_active_text">#ffffffff</color>
+    <color name="title_color">#ff666666</color>
+    <color name="text_color">#ff000000</color>
+    <color name="highlight_color">#ffed1c24</color>
+    <color name="link_color">#fff61e23</color>    
+    <color name="divider_start">#ffffffff</color>
+    <color name="divider_center">#ffa9abae</color>
+    <color name="divider_end">#ffa7a9ac</color>
+    <color name="red_btn_text">#ffffffff</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/menu_bar_height">
+    
+	<LinearLayout 
+	    android:id="@+id/layoutBkg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical" >
+	    
+		<FrameLayout 
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:background="@drawable/menu_bar_up"/>
+		<FrameLayout 
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:background="@drawable/menu_bar_down"/>	    
+		    		    	
+	</LinearLayout>    
+
+	<HorizontalScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="fill_parent" 
+	    	android:orientation="horizontal"
+	    	android:paddingLeft="5dip"
+	    	android:paddingRight="5dip"
+	    	android:paddingTop="5dip"
+	    	android:paddingBottom="10dip"
+	    	android:gravity="center_vertical">
+	        
+			<Button
+			    android:id="@+id/btnMenuNews"
+			    style="@style/MenuButtonInactive"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/icon_news_inactive"
+			    android:text="@string/btn_menu_news" 
+			    />
+				
+			<Button
+			    android:id="@+id/btnMenuProducts"
+			    style="@style/MenuButtonInactive"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/icon_products_inactive"
+			    android:text="@string/btn_menu_products" />
+
+			<Button
+			    android:id="@+id/btnMenuCalculators"
+			    style="@style/MenuButtonInactive"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/icon_calc_inactive"
+			    android:text="@string/btn_menu_calc" />
+
+			<Button
+			    android:id="@+id/btnMenuEmail"
+			    style="@style/MenuButtonInactive"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/icon_email_inactive"
+			    android:text="@string/btn_menu_email" />
+
+			<Button
+			    android:id="@+id/btnMenuContact"
+			    style="@style/MenuButtonInactive"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/icon_contact_inactive"
+			    android:text="@string/btn_menu_contact" />
+																									        	        
+	    </LinearLayout>	    
+	</HorizontalScrollView>
+		
+</RelativeLayout>
+

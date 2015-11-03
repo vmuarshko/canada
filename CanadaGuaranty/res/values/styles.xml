@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="MenuButtonInactive" parent="@android:style/Widget.Button">
+	    <item name="android:background">@drawable/menu_btn_inactive</item>
+        <item name="android:textColor">@color/menu_btn_inactive_text</item>
+        <item name="android:textSize">@dimen/menu_btn_text_size</item>        
+        <item name="android:minWidth">@dimen/menu_btn_min_width</item>
+    </style>	
+
+	<style name="MenuButtonActive" parent="@android:style/Widget.Button">
+	    <item name="android:background">@drawable/menu_btn_active</item>
+        <item name="android:textColor">@color/menu_btn_active_text</item>
+        <item name="android:textSize">@dimen/menu_btn_text_size</item>        
+        <item name="android:minWidth">@dimen/menu_btn_min_width</item>
+	</style>	
+		
+	<style name="TitleTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/title_color</item>
+	</style> 
+
+	<style name="HighLighTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/highlight_color</item>
+	</style> 
+
+	<style name="LinkTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/link_color</item>
+	</style> 
+
+	<style name="DefaultTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+        	</style> 
+						
+	<style name="labelTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text_color</item>
+	</style> 
+		
+	<style name="RedButton" parent="@android:style/Widget.Button">
+	    <item name="android:background">@drawable/red_btn_bg</item>
+        <item name="android:textColor">@color/red_btn_text</item>
+        <item name="android:textStyle">bold</item>
+	</style>	
+	
+	<style name="BackButton" parent="@android:style/Widget.Button">
+	    <item name="android:background">@drawable/back_btn_bg</item>
+        <item name="android:textColor">@color/red_btn_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+	</style>	
+
+	<style name="RedSpinner" parent="@android:style/Widget.Spinner">
+	    <item name="android:layout_marginTop">3dip</item>
+	    <item name="android:layout_marginBottom">5dip</item>
+	    <item name="android:drawSelectorOnTop">true</item>
+	    <item name="android:background">@drawable/spinner_bg</item>
+	</style>	
+
+	<style name="SimpleEditText" parent="@android:style/Widget.EditText">
+	    <item name="android:layout_marginTop">3dip</item>
+	    <item name="android:layout_marginBottom">5dip</item>
+   	    <item name="android:background">@drawable/editbox_bg</item>
+	</style>	
+</resources>

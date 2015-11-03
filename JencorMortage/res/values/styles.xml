@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="labelTextView" parent="android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/label_color</item>
+        </style>
+    <style name="subheaderTextView" parent="android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/subheader_text</item>
+    </style>
+    <style name="listViewText" parent="android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="valueViewText" parent="android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/value_color</item>
+    </style>
+    <style name="linkViewText" parent="android:attr/textAppearanceMedium">
+        <item name="android:textColor">@color/link_color</item>
+    </style>
+    
+    <style name="BackButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_back_bg</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/btn_back_text</item>
+    </style>
+    
+    <style name="SFButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/subheader_text</item>
+        <item name="android:textSize">20sp</item>
+     </style>
+
+    <style name="SFGreenButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/jm_button_bg</item>
+        <item name="android:textColor">@color/btn_back_text</item>
+        <item name="android:textSize">20sp</item>
+     </style>
+    
+</resources>

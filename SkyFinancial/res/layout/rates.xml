@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/home_bg">
+    
+    <include layout="@layout/page_header" android:layout_alignParentTop="true" android:id="@+id/pageHeader" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/page_subheader" android:layout_below="@+id/pageHeader" android:id="@+id/pageSubheader"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    
+    <LinearLayout android:id="@+id/layoutBottom" android:layout_alignParentBottom="true"        
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bar_bg" android:padding="10dip">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_rates_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center" />
+        
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pageSubheader"
+         />
+    
+</RelativeLayout>

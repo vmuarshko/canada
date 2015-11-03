@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight" >
+
+	<RelativeLayout
+	    android:id="@+id/layout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_toLeftOf="@+id/layout2"
+	    android:background="@color/list_item_bg" 
+	    android:minHeight="?android:attr/listPreferredItemHeight">
+    
+	    <ImageView
+	        android:id="@+id/imageViewIcon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="16dp"
+	        android:src="@drawable/calc_planning" />
+
+	    <TextView
+	        android:id="@+id/text1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_toRightOf="@+id/imageViewIcon"
+	        android:text="Text1"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/btn_back_text" />
+
+	</RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout2"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:background="@color/subheader_bg" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fore_arrow" />
+
+    </FrameLayout>
+
+</RelativeLayout>

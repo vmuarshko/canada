@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pageHeader">
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+    	    android:orientation="vertical">        
+		    <TextView
+		        android:id="@+id/textMessage"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/contact_natinal_team_msg"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		    <Spinner
+		        android:id="@+id/spinnerTeam"
+		        android:layout_width="fill_parent"
+		        android:layout_margin="5dip"
+		        android:layout_height="wrap_content"/>
+		            
+	        <LinearLayout 
+	            android:id="@+id/layoutTeam"
+	            android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+	    	    android:orientation="vertical">
+	        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

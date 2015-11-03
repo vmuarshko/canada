@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<include 
+	    android:id="@+id/pageHeader"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    layout="@layout/page_header"/>
+	
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_below="@+id/pageHeader"
+	    android:layout_height="fill_parent">
+	    
+		<LinearLayout
+		    android:id="@+id/layoutButtons"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="center">
+		    
+		    <Button
+		        android:id="@+id/btnMortgagePaymentCalculator"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick="onPaymentCalcClick"
+		        android:minWidth="250dip"
+		        android:layout_marginTop="50dip"
+		        android:layout_marginBottom="10dip"
+		        android:text="@string/btn_mortgage_payment_calculator" />
+	
+		    <Button
+		        android:id="@+id/btnInsurancePremiumCalculator"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dip"
+		        android:onClick="onInsurancePremiumCalcClick"
+		        android:minWidth="250dip"
+		        android:text="@string/btn_insurance_premium_calculator" />
+	
+		    <Button
+		        android:id="@+id/btnRentVsBuyCalculator"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:minWidth="250dip"
+		        android:onClick="onRentVsBuyCalcClick"
+		        android:text="@string/btn_rent_vs_buy_calculator"
+		        android:visibility="gone" />
+		    	    	    	    	    
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

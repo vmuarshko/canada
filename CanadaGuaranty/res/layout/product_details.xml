@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/page_header" />
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pageHeader">
+        
+        <RelativeLayout 
+            android:id="@+id/layoutData"
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dip" 
+    	    android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="@color/highlight_color"
+                android:text="New to Canada"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <FrameLayout android:id="@+id/bar1"
+                android:layout_below="@+id/textCategory" 
+                android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height"
+                android:layout_marginTop="@dimen/view_divider_margin"  
+                android:layout_marginRight="@dimen/view_divider_margin"  
+                android:layout_marginBottom="@dimen/view_divider_margin"  
+                android:background="@drawable/control_divider_bg"/>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="MAPPLE LEAF"
+                android:layout_below="@+id/bar1" 
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitle"
+                android:layout_marginTop="10dip"
+                android:text="Some very long description"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <FrameLayout android:id="@+id/bar2"
+                android:layout_below="@+id/textDescription" 
+                android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height"
+                android:layout_marginTop="@dimen/view_divider_margin"  
+                android:layout_marginRight="@dimen/view_divider_margin"  
+                android:layout_marginBottom="@dimen/view_divider_margin"  
+                android:background="@drawable/control_divider_bg"/>
+            
+			<LinearLayout 
+                android:id="@+id/layoutPoints"
+                android:layout_below="@+id/bar2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+			    
+			</LinearLayout>		            
+
+            <FrameLayout android:id="@+id/bar3"
+                android:layout_below="@+id/layoutPoints" 
+                android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height"
+                android:layout_marginTop="@dimen/view_divider_margin"  
+                android:layout_marginRight="@dimen/view_divider_margin"  
+                android:layout_marginBottom="@dimen/view_divider_margin"  
+                android:background="@drawable/control_divider_bg"/>
+
+            <TextView
+                android:id="@+id/textAppPremiumsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar3"
+                android:maxLines="2"
+                android:text="@string/label_app_premiums"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/highlight_color"
+                android:textStyle="bold" />
+						
+			<TableLayout 
+                android:id="@+id/layoutAppPremiums"
+                android:layout_below="@+id/textAppPremiumsTitle"
+                android:layout_width="match_parent"                
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+                
+                <TableRow 
+                	android:id="@+id/layoutAppPremiumsRow1"
+                    android:layout_width="match_parent"
+                	android:layout_height="wrap_content">
+
+                    <TextView 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ltv_ratio"
+                        android:maxLines="3" 
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_single_premium"
+                        android:maxLines="3" 
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_top_up_premium" 
+                        android:maxLines="3" 
+                        android:layout_margin="3dip"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+
+                    			    
+			</TableLayout>		            
+						
+            <!-- TextView
+                android:id="@+id/textTransactionTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar2"
+                android:layout_marginTop="10dip"
+                android:text="@string/label_transaction_types"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/highlight_color" />
+
+            <TableLayout
+                android:id="@+id/tableDescriptions"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/textTransactionTypes"
+                android:stretchColumns="1"
+                android:layout_marginTop="7dip"
+                android:layout_marginLeft="20dip"
+                android:layout_height="wrap_content" >
+
+            </TableLayout  -->
+            
+    	</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

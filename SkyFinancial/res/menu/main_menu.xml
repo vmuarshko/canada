@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_rates" android:icon="@drawable/menu_rates" android:title="@string/menu_rates"></item>
+    <item android:id="@+id/menu_calculator" android:icon="@drawable/menu_calculator" android:title="@string/menu_calculator"></item>
+    <item android:id="@+id/menu_quick_app" android:icon="@drawable/menu_quick_app" android:title="@string/menu_quick_app"></item>
+    <item android:id="@+id/menu_news" android:icon="@drawable/menu_news" android:title="@string/menu_news"></item>
+    <item android:id="@+id/menu_contacts" android:icon="@drawable/menu_contacts" android:title="@string/menu_contacts"></item>
+    
+
+</menu>

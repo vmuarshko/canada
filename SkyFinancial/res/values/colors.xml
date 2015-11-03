@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="label_color">#ff003355</color>
+    <color name="home_buttons_bg_start">#70ffffff</color>
+    <color name="home_buttons_bg_end">#ffc1c1c1</color>
+    <color name="subheader_start">#ff115587</color>
+    <color name="subheader_end">#ff0d4167</color>
+    <color name="header_start">#fff7f7f7</color>
+    <color name="header_middle">#ffe8e8e8</color>
+    <color name="header_end">#ffcbcbcb</color>
+    <color name="list_item_start">#ffffffff</color>
+    <color name="list_item_middle">#fffbfbfb</color>
+    <color name="list_item_end">#ffdcdcdc</color>
+    <color name="subheader_text">#ffffffff</color>
+    <color name="text_color">#ff000000</color>
+    <color name="bottom_bar_start">#ffffffff</color>
+    <color name="bottom_bar_middle">#fffdfefe</color>
+    <color name="bottom_bar_end">#ffdcdcdc</color>
+    <color name="value_color">#ff5b5b5b</color>
+    <color name="link_color">#ff115587</color>
+    <color name="button_color">#ff094f90</color>
+    <color name="button_edge">#ff9fbdd9</color>
+    <color name="green_button_color">#ff6aa336</color>
+    <color name="green_button_edge">#ff458167</color>
+    
+</resources>
